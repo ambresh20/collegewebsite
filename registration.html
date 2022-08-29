@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Registration Page </title>
+    <style>
+        body {
+            background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+            box-sizing: border-box;
+            margin: 15px 20px 15px 20px;
+            padding: 10px;
+            border: 30px solid black;
+            border-color: #ad5dd1;
+            border-radius: 60px;
+            text-transform: uppercase;
+        }
+        
+        input[type=text] {
+            margin: 10px;
+            padding: 5px;
+            border: #ad5dd1;
+            border-radius: 50px;
+        }
+        
+        .btn {
+            border: 10px;
+            margin: 10px;
+            padding: 8px;
+            border-radius: 20px;
+            text-shadow: 5px 4px 3px 6px;
+        }
+        
+        .btn :hover {
+            color: rgba(41, 201, 20, 0.73);
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            ;
+        }
+        
+        h1 {
+            color: blue;
+            float: center;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+        
+        h1:hover {}
+    </style>
+</head>
+
+<body><br><br>
+    <h1> Registration </h1>
+    <form>
+        <div>
+            <lable> First-name </lable>
+            <input type="text" name="firstname" size="20" /><br><br>
+            <label> Middle-name   </label>
+            <input type="text" name="middlename" size="20" /><br><br>
+            <label> Last-name   </label>
+            <input type="text" name="lastname" size="20" /> <br><br>
+
+        </div>
+
+        <label>course : </label>
+        <select><option value="course">course </option>
+            <option value="BCA">BCA </option>
+            <option value="BBA">BBA </option>
+            <option value="B.Tech">B.Tech </option>
+            <option value="M.Tech">M.Tech </option>
+            <option value="MBA">MBA </option>
+            <option value="MCA">MCA </option>
+            <option value="BSC">BSC </option>
+            <option value="MSC">MSC </option>
+        </select><br><br><br>
+
+        <label>Gender : </label><br>
+        <input type="radio" name="male" />Male <br>
+        <input type="radio" name="female" />Female <br>
+        <input type="radio" name="other" />Other<br><br><br>
+
+        <label>Phone : </label>
+        <input type="text" name="country code" value="+91" size="2" />
+        <input type="text" name="phone" size="10" /><br><br>Address : <br><br>
+        <textarea cols="90" rows="5" value="address"></textarea><br>
+        <br> Email : <input type="email" id="email" name="email" required /><br>
+        <br> Password : <input type="password" id="pass" name="pass" required><br><br><br> Re-type password :
+        <input type="password" id="repass" name="repass" required><br><br><br>
+
+        <div class="btn">
+            <input type="button" value="Submit" />
+            <input type="button" value="Cancel" />
+        </div>
+    </form>
+    <p>If your are alredy Registration</p>
+    <div class="btn">
+        <a href="login_clg.html"> <input type="button" value="Log in" />
+        </a>
+    </div>
+</body>
+
+</html>

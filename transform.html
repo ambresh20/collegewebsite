@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transform </title>
+</head>
+<style>
+    #outer {
+        width: 300 px;
+        height: 300px;
+        background-color: skyblue;
+    }
+    
+    #cube {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        line-height: 100px;
+        transition: all 3s ease-in-out;
+    }
+    
+    #cube p {
+        color: white;
+        text-align: center;
+    }
+    
+    #cube:hover {
+        width: 200px;
+        border-radius: 40px;
+        background: green;
+        transform: scale(0.5_);
+    }
+</style>
+
+<body>
+    <div id="outer">
+        <div id="cube">
+            <p>Ambresh </p>
+        </div>
+    </div>
+</body>
+
+</html>
